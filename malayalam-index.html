@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N th term</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+</head>
+<body>
+<section id="title" class="p-first">
+    <form name="form">
+        <!-- <label  class="p-first a" for="f">First Term = </label>
+        <input type="text" name="first" id="f"><br>
+        <label for="c"   class="p-first b">Common Difference = </label>
+        <input type="text" name="second" id="c"><br>
+        <input type="button" value="Show Question" onclick="myFunction();"> -->
+        <p class="second-p" id="demo"></p><br>
+        <label  class="p-first" id="d" for="answerwrite">Write your Answer : </label>
+        <input type="text"  name="writeanswer" id="answerwrite"><br>
+        <input type="button"  value="Submit"  onclick=correctAnswer()>
+        
+        
+    <div class="result" id="result">
+        <p class="second-p special" id="x"></p>
+        
+        <!-- </div> -->
+        <br>
+        <input type="button"  value="Show Steps" onclick=Steps()><br>
+        <h3 id="q"></h3><br><br>
+        <input type="button" onClick="window.location.href=window.location.href" value="Change Question">
+    <!-- </div> -->
+        <p class="ajay">Developed by : Ajay Daniel Trevor</p>
+    </form>
+</section>
+    <script src="malayalam-script.js"></script>
+</body>
+</html>
