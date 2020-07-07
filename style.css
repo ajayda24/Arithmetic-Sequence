@@ -56,22 +56,7 @@ h5{
   input[type=text]:focus {
     background-color: lightblue;
   }
-  /* #f{
-    margin-left: 3.1%;
-  }
-  #n{
-    margin-left: 3%;
-  }
-  .a{
-    margin-left: 13.8%;
-  }
-  .c{
-    margin-left: 26%;
-  }
   
-  .first-div{
-    text-align: center;
-  } */
   .second-p{
     padding-top: 2%;
     margin: 0% 3% 0%;
@@ -84,21 +69,4 @@ h5{
     font-size: 1rem;
     color: #8ec6c5;
   }
-  /* #d{
-    margin-left: 9%;
-  }
-  .special{
-    text-align: center;
-    
-  }
- .abcde{
-   text-align: center;
-   margin-left: 30%;
- }
- #q{
-   color: #fff;
-   margin-top: 120%;
- }
- .orig{
-   margin-left:-120%;
- }  */
+ 
