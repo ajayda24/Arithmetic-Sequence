@@ -67,7 +67,7 @@ input[type=button]{
     text-align: center;
     font-size: 28px;
     padding: 1% 2%;
-    width: 90%;
+    width: 370px;
     transition: all 0.5s;
     cursor: pointer;
     margin-top: 3%;
@@ -101,4 +101,9 @@ input[type=button]{
     text-align: center;
     font-size: 1rem;
     color: #8ec6c5;
+  }
+@media only screen and (max-width: 600px) {
+    input[type=button] {
+      width: 90%;
+    }
   }
