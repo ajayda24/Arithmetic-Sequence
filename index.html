@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N th term</title>
+    <title>Arithmetic Sequence</title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Style CSS-->
@@ -19,24 +19,67 @@
     <form name="form">
        
         <p class="second-p" id="demo"></p><br>
+        
         <label  class="p-first" id="d" for="answerwrite">Write your Answer : </label>
         <input type="text"  name="writeanswer" id="answerwrite"><br>
-        <input type="button"  value="Submit"  onclick=correctAnswer()>
+        <input type="button"  value="Submit Question 1"  onclick="correctAnswer()">
+        <div class="result" id="result">
+            <p class="second-p special" id="x"></p><br>
+            
+           
+            <br>
+            <input type="button"  value="Show Steps" onclick=Steps()><br>
+            <h3 id="q"></h3><br><br>
+            <!-- <input type="button" onClick="window.location.href=window.location.href" value="Change Question"> -->
+        </div>
+        <p class="second-p" id="questiontwo"></p><br>
+        <label  class="p-first" id="e" for="answerwriteforquestiontwo">Write your Answer ( yes / no ) : </label>
+        <input type="text"  name="writeanswertwo" id="answerwriteforquestiontwo" ><br>
         
         
-    <div class="result" id="result">
-        <p class="second-p special" id="x"></p>
         
+        <input type="button"  value="Submit Question 2. (i)"  onclick="correctAnswertwo()">
         
-        <br>
-        <input type="button"  value="Show Steps" onclick=Steps()><br>
-        <h3 id="q"></h3><br><br>
-        <input type="button" onClick="window.location.href=window.location.href" value="Change Question">
     
-        <p class="ajay">Developed by : Ajay Daniel Trevor</p>
-        <p class="ajay">Contact me to build Websites</p>
-        <p class="ajay">Phone No. : +91 9496424771</p>
-        <p class="ajay">Email : ajaydtrevor@gmail.com</p>
+        <div id="resultTwoFirst">
+            <p class="second-p special" id="xtwo"></p><br>
+            <div id="abcde">
+              <p class="second-p special" id="xtwosteps"></p><br>
+              <!-- <input type="button" onClick="window.location.href=window.location.href" value="Change Question"> -->
+            </div>
+            
+        </div>
+        <div class="resulttwo" id="resulttwo">
+            <p class="second-p special" id="questiontwopointtwo"></p>
+            <div id="answerwriteforquestiontwo-div">
+                <label class="p-first" for="answerwriteforquestiontwo">Write your Answer for Question 2 (ii). :</label>
+            <input type="text"  name="writeanswerforquestiontwoPointtwo" id="answerwriteforquestiontwo"><br>
+            <input type="button"  value="Submit Question 2. (ii)"  onclick="correctAnswerPointTwo()">
+            </div>
+            <div id="checkingQuestionTwoPointTwo">
+                <p class="second-p special" id="xtwoPointTwo"></p><br>
+
+            </div>
+            <p class="second-p special" id="xtwo"></p><br>
+            
+            
+            
+            
+        </div>
+        <div id="showingresulttwo">
+            <input type="button"  value="Show Steps for Question 2" onclick=StepsQuestionTwo()><br>
+            <h3 id="r"></h3><br>
+        </div>
+        <div id="changequestion-div">
+            <input type="button" onClick="window.location.href=window.location.href" value="Change Question">
+            <p class="update-questions">* More questions will be added soon...</p>
+            <br>
+            <p class="ajay">Developed by : Ajay Daniel Trevor</p>
+            <p class="ajay">Contact me to build Websites</p>
+            <p class="ajay">Phone No. : +91 9496424771</p>
+            <p class="ajay">Email : ajaydtrevor@gmail.com</p>
+            <p class="ajay">Website : <a href="https://judgement.gq/post">https://judgement.gq/post </a></p>
+        </div>
     </form>
 </section>
     <script src="script.js"></script>
