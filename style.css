@@ -1,109 +1,196 @@
+/* ----  Body ----*/
+
 body{
-  font-family: 'Roboto', sans-serif;
-  
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2e4a;
+    color: #fff;
 }
 
-#title{
-  background-color: #511845;
-  height:auto;
-}
-.p-first{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #fff;
-  text-align: center;
-}
-h2{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #00909e;
-}
-h5{
-  color: #af9a9a;
-}
-.container-fluid{
-  padding: 3% 7%;
-}
-#result {
-    display: none;
+/* ---- All-Section ---- */
+
+#all{
     text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    
 }
-#resulttwo{
-  display: none;
-  text-align: center;
+
+/* ---- Content-Name ---- */
+
+h1,h2{
+    font-size: 3rem;
 }
-#resultTwoFirst{
-  display: none;
-  text-align: center;
+
+p{
+    font-size: 1.5rem;
 }
-#answerwriteforquestiontwo-div{
-  display: none;
-  text-align: center;
+
+/* ---- Questions ---- */
+
+#questions{
+    text-align: left;
+    margin-top: 5%;
+    font-size: 1.4rem;
 }
-#checkingQuestionTwoPointTwo{
-  display: none;
-  text-align: center;
+.questions-p{
+    margin-top: 4%;
 }
-#abcde{
-  display: none;
-  text-align: center;
+#three-one-label-id{
+    margin-left: 3%;
 }
-#changequestion-div{
-  display: none;
-  text-align: center;
+.sub-questions{
+    margin-left: 5%;
+    /* margin-right: 15%; */
 }
-#showingresulttwo{
-  display: none;
-  text-align: center;
+
+/* ---- Sub Questions ---- */
+
+.sub{
+    margin-left: 2%;
 }
-input[type=button]{
+
+/* ---- Check Answers ---- */
+
+#checkAnswers{
+    display: none;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* ---- Show Answers ---- */
+
+#showOriginalAnswers{
+    display: none;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* ---- Button ---- */
+
+.button{
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 1%;
+    font-size: 2rem;
+    
+}
+
+.button-class{
+    text-align: center;
+    margin: 5%;
+    font-size: 2rem;
     display: inline-block;
     border-radius: 12px;
-    background-color: #ff5733;
+    background-color: #ffffff;
     border: none;
-    color: #FFFFFF;
+    color: #000;
     text-align: center;
     font-size: 28px;
-    padding: 1% 2%;
-    width: 370px;
+    font-weight: bold;
+    padding: 1% 1%;
+    width: 300px;
     transition: all 0.5s;
     cursor: pointer;
-    margin-top: 3%;
-    margin-bottom: -3%;
-    margin-bottom: 1.5%;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
+.button-class:hover{
+    background-color: lightblue;
+}
+
+/* .medium-change{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5%;
+    border-radius: 12px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+}
+.medium-change:hover{
+    background-color: lightblue;
+} */
+a:link, a:visited{
+    text-decoration: none;
+}
+.medium-change {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5%;
+    border-radius: 12px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bold;
   }
-  input[type=text]{
-    border-radius: 4px;
-    width: 90px;
-    font-size: 1rem;
-    padding: 1% 1%;
-    margin: 1% 3%;
-  }
-  input[type=text]:focus {
+  
+  a:hover, a:active {
     background-color: lightblue;
   }
- 
-  .second-p{
-    padding-top: 2%;
-    margin: 0% 3% 0%;
-    color: #fff;
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-  .ajay{
+.my-link{
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 1rem;
-    color: #fff;
-  }
-  .update-questions{
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    transition: all 0.5s;
+    cursor: pointer;
+}  
+/* ---- Footer ---- */
+
+.footer-div{
     text-align: center;
-    font-size: 1rem;
-    color: #8ec6c5;
-  }
-@media only screen and (max-width: 600px) {
-    input[type=button] {
-      width: 90%;
+}
+
+/* ---- Media Query ---- */
+
+@media only screen and (max-width: 800px) {
+    #all{
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+    h1,h2{
+        font-size: 1.4rem;
+    }
+    h5{
+        font-size: 0.9rem;
+    }
+    .button-class{
+        text-align: center;
+        margin: 5%;
+        font-size: 2rem;
+        display: inline-block;
+        border-radius: 12px;
+        background-color: #ffffff;
+        border: none;
+        color: #000000;
+        text-align: center;
+        font-size: 28px;
+        padding: 1% 1%;
+        width: 230px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .button{
+        text-align: center;
+        margin: 3%;
+        font-size: 2rem;
+        
+    }
+    .fandd{
+        width: 50px;
     }
   }
