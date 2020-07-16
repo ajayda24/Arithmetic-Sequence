@@ -12,76 +12,248 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <!-- <link rel="shortcut icon" href="icon.png" type="image/x-icon" /> -->
+    
 </head>
 <body>
-<section id="title" class="p-first">
-    <form name="form">
-       
-        <p class="second-p" id="demo"></p><br>
+<section id="all">
+    <!-- Content-Name -->
+    <section id="name">
+        <h1>Arithmetic Sequence</h1>
+        <h1> Question & Answers</h1>
+        <h5>Developed by : Ajay Daniel Trevor</h5>
+        <a href="malayalam-index.html" class="medium-change"><font size="4">Select</font><br>Malayalam - Medium</a>
         
-        <label  class="p-first" id="d" for="answerwrite">Write your Answer : </label>
-        <input type="text"  name="writeanswer" id="answerwrite"><br>
-        <input type="button"  value="Submit Question 1"  onclick="correctAnswer()">
-        <div class="result" id="result">
-            <p class="second-p special" id="x"></p><br>
-            
-           
-            <br>
-            <input type="button"  value="Show Steps" onclick=Steps()><br>
-            <h3 id="q"></h3><br><br>
-            <!-- <input type="button" onClick="window.location.href=window.location.href" value="Change Question"> -->
-        </div>
-        <p class="second-p" id="questiontwo"></p><br>
-        <label  class="p-first" id="e" for="answerwriteforquestiontwo">Write your Answer ( yes / no ) : </label>
-        <input type="text"  name="writeanswertwo" id="answerwriteforquestiontwo" ><br>
-        
-        
-        
-        <input type="button"  value="Submit Question 2. (i)"  onclick="correctAnswertwo()">
-        
-    
-        <div id="resultTwoFirst">
-            <p class="second-p special" id="xtwo"></p><br>
-            <div id="abcde">
-              <p class="second-p special" id="xtwosteps"></p><br>
-              <!-- <input type="button" onClick="window.location.href=window.location.href" value="Change Question"> -->
-            </div>
-            
-        </div>
-        <div class="resulttwo" id="resulttwo">
-            <p class="second-p special" id="questiontwopointtwo"></p>
-            <div id="answerwriteforquestiontwo-div">
-                <label class="p-first" for="answerwriteforquestiontwo">Write your Answer for Question 2 (ii). :</label>
-            <input type="text"  name="writeanswerforquestiontwoPointtwo" id="answerwriteforquestiontwo"><br>
-            <input type="button"  value="Submit Question 2. (ii)"  onclick="correctAnswerPointTwo()">
-            </div>
-            <div id="checkingQuestionTwoPointTwo">
-                <p class="second-p special" id="xtwoPointTwo"></p><br>
+    </section>
+    <!-- Question -->
+    <section id="questions">
+        <div class="questions-div">
+            <form name="form">
 
+            <!-- Question - 1 -->
+           
+            <p id="one" class="questions-p"></p>
+
+            <div class="sub-questions">
+            <!-- Question - 1 (a) -->
+
+            <p id="one-one" class="questions-p"></p>
+            <div id="hiding-textbox-one-one">
+            <label for="one-sub-one-ans-id"> &nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="oneSubOneAns" id="one-sub-one-ans-id">
             </div>
-            <p class="second-p special" id="xtwo"></p><br>
+            <!-- Question - 1 (b) -->
             
+            <p id="one-two" class="questions-p"></p>
+            <div id="hiding-textbox-one-two">
+            <label for="one-sub-two-ans-id"> &nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="oneSubTwoAns" id="one-sub-two-ans-id">
+            </div>
+            <!-- Question - 1 (c) -->
             
+            <p id="one-three" class="questions-p"></p>
+            <div id="hiding-textbox-one-three">
+            <label for="one-sub-three-ans-id"> &nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="oneSubThreeAns" id="one-sub-three-ans-id">
+            </div>
+            <!-- Question - 1 (d) -->
             
+            <p id="one-four" class="questions-p"></p>
+            <div id="hiding-textbox-one-four">
+            <label for="one-sub-four-ans-id"> &nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="oneSubFourAns" id="one-sub-four-ans-id">
+            </div>
+            </div>
+            <!-- Question - 2 -->
+
+            <p id="two" class="questions-p"></p>
+
+            <!-- Question - 2 (a) -->
+            <div class="sub-questions">
+
+            <p id="two-one" class="questions-p"></p>
+            <div id="hiding-textbox-two-one">
+            <label for="two-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <label for="two-sub-one-ans-f-id">f =  </label>
+            <input type="text" size="3" name="twoSubOneAnsF" id="two-sub-one-ans-f-id" class="fandd">
+            <label for="two-sub-one-ans-d-id" id="two-sub-one-label-id">d = </label>
+            <input type="text" size="3" name="twoSubOneAnsD" id="two-sub-one-ans-d-id" class="fandd">
+            </div>
+            <!-- Question - 2 (b) -->
+            
+            <p id="two-two" class="questions-p"></p>
+            <div id="hiding-textbox-two-two">
+            <label for="two-sub-two-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="twoSubTwoAns" id="two-sub-two-ans-id">
+            </div>
+            <!-- Question - 2 (c) -->
+          
+            <p id="two-three" class="questions-p"></p>
+            <div id="hiding-textbox-two-three">
+            <label for="two-sub-three-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="twoSubThreeAns" id="two-sub-three-ans-id">
+            </div>
+            </div>
+            <!-- Question - 3 -->
+
+            <p id="three" class="questions-p"></p>
+ 
+            <!-- Question - 3 (a) -->
+            <div class="sub-questions">
+
+            
+            <p id="three-one" class="questions-p"></p>
+            <div id="hiding-textbox-three-one">
+            <label for="three-sub-one-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="threeSubOneAns" id="three-sub-one-ans-id">
+            </div>
+            <!-- Question - 3 (b) -->
+
+            <p id="three-two" class="questions-p"></p>
+            <div id="hiding-textbox-three-two">
+            <label for="three-sub-two-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="threeSubTwoAns" id="three-sub-two-ans-id">
+            </div>
+            <!-- Question - 3 (c) -->
+            
+            <p id="three-four" class="questions-p"></p>
+            <div id="hiding-textbox-three-three">
+            <label for="three-sub-four-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="threeSubThreeAns" id="three-sub-four-ans-id">
+            </div>
+            <!-- Question - 3 (d) -->
+            
+            <p id="three-five" class="questions-p"></p>
+            <div id="hiding-textbox-three-four">
+            <label for="three-sub-five-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="threeSubFourAns" id="three-sub-five-ans-id">
+            </div>
+            <!-- Question - 3 (e) -->
+            
+            <p id="three-six" class="questions-p"></p>
+            <div id="hiding-textbox-three-five">
+            <label for="three-sub-six-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="threeSubFiveAns" id="three-sub-six-ans-id">
+            </div>
+            </div>
+            <!-- Question - 4 -->
+
+            <!-- <p id="four" class="questions-p"></p>
+            <label for="four-ans-id">Ans : </label>
+            <input type="text" name="four-ans" id="four-ans-id"> -->
+
+            <!-- Question - 5 -->
+
+            <!-- <p id="five" class="questions-p"></p>
+            <label for="five-ans-id">Ans : </label>
+            <input type="text" name="five-ans" id="five-ans-id"> -->
+
+            <!-- Question - 6 -->
+
+            <!-- <p id="six" class="questions-p"></p>
+            <label for="six-ans-id">Ans : </label>
+            <input type="text" name="six-ans" id="six-ans-id"> -->
+            
+            <!-- Question - 7 -->
+
+            <!-- <p id="seven" class="questions-p"></p>
+            <label for="seven-ans-id">Ans : </label>
+            <input type="text" name="seven-ans" id="seven-ans-id"> -->
+
+            <!-- Question - 8 -->
+
+            <!-- <p id="eight" class="questions-p"></p>
+            <label for="eight-ans-id">Ans : </label>
+            <input type="text" name="eight-ans" id="eight-ans-id"> -->
+
+            <!-- Question - 9 -->
+
+            <!-- <p id="nine" class="questions-p"></p>
+            <label for="nine-ans-id">Ans : </label>
+            <input type="text" name="nine-ans" id="nine-ans-id"> -->
+
+            <!-- Question - 10 -->
+
+            <!-- <p id="ten" class="questions-p"></p>
+            <label for="ten-ans-id">Ans : </label>
+            <input type="text" name="ten-ans" id="ten-ans-id"> -->
             
         </div>
-        <div id="showingresulttwo">
-            <input type="button"  value="Show Steps for Question 2" onclick=StepsQuestionTwo()><br>
-            <h3 id="r"></h3><br>
+        
+        
+        
+        <div class="button">
+        <input type="button" class="button-class" value="SUBMIT" onclick="submitAnswers()">
+        <!-- <button onclick="submitAnswers()">Submit</button> -->
         </div>
-        <div id="changequestion-div">
-            <input type="button" onClick="window.location.href=window.location.href" value="Change Question">
-            <p class="update-questions">* More questions will be added soon...</p>
-            <br>
-            <p class="ajay">Developed by : Ajay Daniel Trevor</p>
-            <p class="ajay">Contact me to build Websites</p>
-            <p class="ajay">Phone No. : +91 9496424771</p>
-            <p class="ajay">Email : ajaydtrevor@gmail.com</p>
-            <p class="ajay">Website : <a href="https://judgement.gq/post">https://judgement.gq/post </a></p>
+    </section>
+    <!-- Check Answers -->
+    <section id="checkAnswers">
+        <p id="checkAnswerOneOne" class="checking"></p>
+        <p id="checkAnswerOneTwo" class="checking"></p>
+        <p id="checkAnswerOneThree" class="checking"></p>
+        <p id="checkAnswerOneFour" class="checking"></p>
+        <br>
+
+        <p id="checkAnswerTwoOne" class="checking"></p>
+        <p id="checkAnswerTwoTwo" class="checking"></p>
+        <p id="checkAnswerTwoThree" class="checking"></p>
+        <br>
+        <p id="checkAnswerThreeOne" class="checking"></p>
+        <p id="checkAnswerThreeTwo" class="checking"></p>
+        <p id="checkAnswerThreeThree" class="checking"></p>
+        <p id="checkAnswerThreeFour" class="checking"></p>
+        <p id="checkAnswerThreeFive" class="checking"></p>
+
+        <!-- <p id="checkAnswerFour" class="checking"></p>
+        <p id="checkAnswerFive" class="checking"></p>
+        <p id="checkAnswerSix" class="checking"></p>
+        <p id="checkAnswerSeven" class="checking"></p>
+        <p id="checkAnswerEight" class="checking"></p>
+        <p id="checkAnswerNine" class="checking"></p>
+        <p id="checkAnswerTen" class="checking"></p>-->
+        <div class="button">
+            <input type="button" class="button-class" value="SHOW ANSWERS" onclick="showAnswers()">
+            <!-- <button onclick="showAnswers()">Show Answers</button> -->
         </div>
-    </form>
+        
+        
+    </section>
+    <!-- Show Answers -->
+    <section id="showOriginalAnswers">
+        <p id="originalAnswerOneOne" class="answer"></p>
+        <p id="originalAnswerOneTwo" class="answer"></p>
+        <p id="originalAnswerOneThree" class="answer"></p>
+        <p id="originalAnswerOneFour" class="answer"></p>
+        <br>
+        <p id="originalAnswerTwoOne" class="answer"></p>
+        <p id="originalAnswerTwoTwo" class="answer"></p>
+        <p id="originalAnswerTwoThree" class="answer"></p>
+        <br>
+        <p id="originalAnswerThreeOne" class="answer"></p>
+        <p id="originalAnswerThreeTwo" class="answer"></p>
+        <p id="originalAnswerThreeThree" class="answer"></p>
+        <p id="originalAnswerThreeFour" class="answer"></p>
+        <p id="originalAnswerThreeFive" class="answer"></p>
+        <!-- <h3 id="originalAnswerFour" class="answer"></h3>
+        <h3 id="originalAnswerFive" class="answer"></h3>
+        <h3 id="originalAnswerSix" class="answer"></h3>
+        <h3 id="originalAnswerSeven" class="answer"></h3>
+        <h3 id="originalAnswerEight" class="answer"></h3>
+        <h3 id="originalAnswerNine" class="answer"></h3>
+        <h3 id="originalAnswerTen" class="answer"></h3> -->
+        <div class="footer-div">
+        <div class="button">
+        <input type="button" class="button-class" value="Change Question" onclick="window.location.href=window.location.href">
+        </div>
+        <p class="contentEnd">Developed by : Ajay Daniel Trevor</p>
+        <p class="contentEnd">Email : ajaydtrevor@gmail.com</p>
+        <p class="contentEnd">Phone : +91 9496424771</p>
+        <p class="contentEnd">Website : <a href="https://judgement.gq/post" class="my-link">https://judgement.gq</a></p>
+        </div>
+    </section>
+</form>
 </section>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
