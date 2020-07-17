@@ -165,6 +165,12 @@ a:link, a:visited{
 .score{
     font-size: 2rem;
 }
+.questionScore{
+    margin-left: 30%;
+}
+#questionScoreForTwo{
+    margin-left: 20%;
+}
 /* ---- Media Query ---- */
 
 @media only screen and (max-width: 800px) {
