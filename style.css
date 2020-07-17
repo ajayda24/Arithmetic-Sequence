@@ -1,5 +1,7 @@
 /* ----  Body ----*/
-
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #2b2e4a;
