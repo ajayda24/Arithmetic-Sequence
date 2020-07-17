@@ -517,42 +517,42 @@ else{
         var yourScore = 0;
 
         if(check_one_one_checked == "1.(a) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
         if(check_one_two_checked == "1.(b) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
         if(check_one_three_checked == "1.(c) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
         if(check_one_four_checked == "1.(d) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
         
         if(check_two_one_checked == "2.(a) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
         if(check_two_two_checked == "2.(b) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
         if(check_two_three_checked == "2.(c) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
 
         if(check_three_one_checked == "3.(a) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
         if(check_three_two_checked == "3.(b) Correct Answer "){
             yourScore = yourScore+1;
         }
         if(check_three_three_checked == "3.(c) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+3;
         }
         if(check_three_four_checked == "3.(d) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+2;
         }
         if(check_three_five_checked == "3.(e) Correct Answer "){
-            yourScore = yourScore+1;
+            yourScore = yourScore+3;
         }
 
 
