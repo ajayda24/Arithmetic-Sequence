@@ -1,1 +1,1 @@
-Find nth term of a Arithmetic Sequence.
+Arithmetic Sequence Exam Questions.
