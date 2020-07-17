@@ -212,4 +212,10 @@ a:link, a:visited{
     .fandd{
         width: 50px;
     }
+    .questionScore{
+        margin-left: 9%;
+    }
+    #questionScoreForTwo{
+        margin-left: 7%;
+    }
   }
