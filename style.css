@@ -57,7 +57,9 @@ p{
     margin-left: 2%;
     margin-right: 2%;
 }
-
+#checkAnswerOneOne{
+    margin-top: 5%;
+}
 /* ---- Show Answers ---- */
 
 #showOriginalAnswers{
@@ -152,6 +154,17 @@ a:link, a:visited{
     text-align: center;
 }
 
+
+/* #displayScore{
+    display: inline-block;
+}
+
+#displayScoreName{
+    display: inline-block;
+} */
+.score{
+    font-size: 2rem;
+}
 /* ---- Media Query ---- */
 
 @media only screen and (max-width: 800px) {
