@@ -135,6 +135,41 @@
             <input type="text" size="5" name="threeSubFiveAns" id="three-sub-six-ans-id"><span class="questionScore"> (3)</span>
             </div>
             </div>
+            
+            <!-- Question - 4 -->
+            
+            <div class="questionNumberFour">
+                <span class="serialNumber">4.) </span>
+                <span id="four" class="questions-p"></span>
+              <!-- Question - 4 (a) -->
+              <div class="sub-questions">
+    
+                <p id="four-one" class="questions-p"></p>
+                <div id="hiding-textbox-four-one">
+                <label for="four-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+                <label for="two-sub-one-ans-f-id">f =  </label>
+                <input type="text" size="3" name="fourSubOneAnsF" id="four-sub-one-ans-f-id" class="fandd">
+                <label for="four-sub-one-ans-d-id" id="four-sub-one-label-id">d = </label>
+                <input type="text" size="3" name="fourSubOneAnsD" id="four-sub-one-ans-d-id" class="fandd"><span id="questionScoreForFour" class="questionScore"> (2)</span>
+                </div>
+                <!-- Question - 4 (b) -->
+    
+                <p id="four-two" class="questions-p"></p>
+                <div id="hiding-textbox-four-two">
+                <label for="four-sub-two-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+                <input placeholder="+/- 4" type="text" size="2" name="fourSubTwoAns" id="four-sub-two-ans-id">
+                <label for="four-sub-two-ans-d-id" id="four-sub-one-label-id">n</label>&nbsp;&nbsp;&nbsp;
+                <input placeholder="+/- 3" type="text" size="2" name="fourSubTwoAnsD" id="four-sub-two-ans-d-id" class="fandd"><span id="questionScoreForFour" class="questionScore"> (2)</span>
+    
+                </div>
+                <!-- Question - 4 (c) -->
+                
+                <p id="four-three" class="questions-p"></p>
+                <div id="hiding-textbox-four-three">
+                <label for="four-sub-four-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+                <input type="text" size="5" name="fourSubThreeAns" id="four-sub-four-ans-id"><span class="questionScore"> (1)</span>
+                </div>
+                </div>
             <!-- Question - 4 -->
 
             <!-- <p id="four" class="questions-p"></p>
@@ -153,36 +188,15 @@
             <label for="six-ans-id">Ans : </label>
             <input type="text" name="six-ans" id="six-ans-id"> -->
             
-            <!-- Question - 7 -->
 
-            <!-- <p id="seven" class="questions-p"></p>
-            <label for="seven-ans-id">Ans : </label>
-            <input type="text" name="seven-ans" id="seven-ans-id"> -->
-
-            <!-- Question - 8 -->
-
-            <!-- <p id="eight" class="questions-p"></p>
-            <label for="eight-ans-id">Ans : </label>
-            <input type="text" name="eight-ans" id="eight-ans-id"> -->
-
-            <!-- Question - 9 -->
-
-            <!-- <p id="nine" class="questions-p"></p>
-            <label for="nine-ans-id">Ans : </label>
-            <input type="text" name="nine-ans" id="nine-ans-id"> -->
-
-            <!-- Question - 10 -->
-
-            <!-- <p id="ten" class="questions-p"></p>
-            <label for="ten-ans-id">Ans : </label>
-            <input type="text" name="ten-ans" id="ten-ans-id"> -->
             
         </div>
         
         
         
-        <div class="button" onclick="window.location='#checkAnswers';">
-        <input type="button" class="button-class" value="SUBMIT" onclick="submitAnswers()">
+        <div class="button" onclick="submitAnswers()">
+            <input type="button" class="button-class" value="SUBMIT" onclick="window.location='#checkAnswers';">
+        <!-- <span><img src="scrollDown.png" alt="scroll- down"  id="scrollDownId"></span> -->
         <span><i class="fas fa-arrow-circle-down"  id="scrollDownId"></i></span>
         <!-- <button onclick="submitAnswers()">Submit</button> -->
         </div>
@@ -191,7 +205,7 @@
     <section id="checkAnswers">
         <span id="displayScoreName" class="score">Your Score : &nbsp;&nbsp;&nbsp;</span>
         <span id="displayScore" class="score"></span>
-        <span id="displayScoreTotal" class="score"> / 25</span>
+        <span id="displayScoreTotal" class="score"> / 30</span>
         <p id="checkAnswerOneOne" class="checking"></p>
         <p id="checkAnswerOneTwo" class="checking"></p>
         <p id="checkAnswerOneThree" class="checking"></p>
@@ -207,16 +221,15 @@
         <p id="checkAnswerThreeThree" class="checking"></p>
         <p id="checkAnswerThreeFour" class="checking"></p>
         <p id="checkAnswerThreeFive" class="checking"></p>
-
-        <!-- <p id="checkAnswerFour" class="checking"></p>
-        <p id="checkAnswerFive" class="checking"></p>
-        <p id="checkAnswerSix" class="checking"></p>
-        <p id="checkAnswerSeven" class="checking"></p>
-        <p id="checkAnswerEight" class="checking"></p>
-        <p id="checkAnswerNine" class="checking"></p>
-        <p id="checkAnswerTen" class="checking"></p>-->
-        <div class="button"  onclick="window.location='#showOriginalAnswers';">
-            <input type="button" class="button-class" value="SHOW ANSWERS" onclick="showAnswers()">
+        <br>
+        <p id="checkAnswerFourOne" class="checking"></p>
+        <p id="checkAnswerFourTwo" class="checking"></p>
+        <p id="checkAnswerFourThree" class="checking"></p>
+        <p id="checkAnswerFourFour" class="checking"></p>
+        <br>
+        <div class="button" onclick="showAnswers()">
+            <input type="button" class="button-class" value="SHOW ANSWERS" onclick="window.location='#showOriginalAnswers';">
+            <!-- <span><img src="scrollDown.png" alt="scroll- down"  id="scrollDownId"></span> -->
             <span><i class="fas fa-arrow-circle-down"  id="scrollDownId"></i></span>
             <!-- <button onclick="showAnswers()">Show Answers</button> -->
         </div>
@@ -239,6 +252,10 @@
         <p id="originalAnswerThreeThree" class="answer"></p>
         <p id="originalAnswerThreeFour" class="answer"></p>
         <p id="originalAnswerThreeFive" class="answer"></p>
+        <br>
+        <p id="originalAnswerFourOne" class="answer"></p>
+        <p id="originalAnswerFourTwo" class="answer"></p>
+        <p id="originalAnswerFourThree" class="answer"></p>
         <!-- <h3 id="originalAnswerFour" class="answer"></h3>
         <h3 id="originalAnswerFive" class="answer"></h3>
         <h3 id="originalAnswerSix" class="answer"></h3>
