@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arithmetic Sequence</title>
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--Style CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <!-- <link rel="shortcut icon" href="icon.png" type="image/x-icon" /> -->
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
@@ -136,12 +137,41 @@
             <input type="text" size="5" name="threeSubFiveAns" id="three-sub-six-ans-id"><span class="questionScore"> (3)</span>
             </div>
             </div>
+
             <!-- Question - 4 -->
+            
+            <div class="questionNumberFour">
+            <span class="serialNumber">4.) </span>
+            <span id="four" class="questions-p"></span>
+          <!-- Question - 4 (a) -->
+          <div class="sub-questions">
 
-            <!-- <p id="four" class="questions-p"></p>
-            <label for="four-ans-id">Ans : </label>
-            <input type="text" name="four-ans" id="four-ans-id"> -->
+            <p id="four-one" class="questions-p"></p>
+            <div id="hiding-textbox-four-one">
+            <label for="four-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <label for="two-sub-one-ans-f-id">f =  </label>
+            <input type="text" size="3" name="fourSubOneAnsF" id="four-sub-one-ans-f-id" class="fandd">
+            <label for="four-sub-one-ans-d-id" id="four-sub-one-label-id">d = </label>
+            <input type="text" size="3" name="fourSubOneAnsD" id="four-sub-one-ans-d-id" class="fandd"><span id="questionScoreForFour" class="questionScore"> (2)</span>
+            </div>
+            <!-- Question - 4 (b) -->
 
+            <p id="four-two" class="questions-p"></p>
+            <div id="hiding-textbox-four-two">
+            <label for="four-sub-two-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input placeholder="+/- 4" type="text" size="2" name="fourSubTwoAns" id="four-sub-two-ans-id">
+            <label for="four-sub-two-ans-d-id" id="four-sub-one-label-id">n</label>&nbsp;&nbsp;&nbsp;
+            <input placeholder="+/- 3" type="text" size="2" name="fourSubTwoAnsD" id="four-sub-two-ans-d-id" class="fandd"><span id="questionScoreForFour" class="questionScore"> (2)</span>
+
+            </div>
+            <!-- Question - 4 (c) -->
+            
+            <p id="four-three" class="questions-p"></p>
+            <div id="hiding-textbox-four-three">
+            <label for="four-sub-four-ans-id">&nbsp;&nbsp;&nbsp;&nbsp;Ans : </label>
+            <input type="text" size="5" name="fourSubThreeAns" id="four-sub-four-ans-id"><span class="questionScore"> (1)</span>
+            </div>
+            </div>
             <!-- Question - 5 -->
 
             <!-- <p id="five" class="questions-p"></p>
@@ -181,10 +211,11 @@
         </div>
         
         
-        
-        <div class="button" onclick="window.location='#checkAnswers';">
-        <input type="button" class="button-class" value="SUBMIT" onclick="submitAnswers()">
-            <span><i class="fas fa-arrow-circle-down"  id="scrollDownId"></i></span>
+        <!-- <div class="button" onclick="window.location='#checkAnswers';"> -->
+        <div class="button" onclick="submitAnswers()">
+        <input type="button" class="button-class" value="SUBMIT" onclick="window.location='#checkAnswers';">
+        <!-- <span><img src="scrollDown.png" alt="scroll- down"  id="scrollDownId"></span> -->
+        <span><i class="fas fa-arrow-circle-down"  id="scrollDownId"></i></span>
         <!-- <button onclick="submitAnswers()">Submit</button> -->
         </div>
     </section>
@@ -192,7 +223,7 @@
     <section id="checkAnswers">
         <span id="displayScoreName" class="score">Your Score : &nbsp;&nbsp;&nbsp;</span>
         <span id="displayScore" class="score"></span>
-        <span id="displayScoreTotal" class="score"> / 25</span>
+        <span id="displayScoreTotal" class="score"> / 30</span>
         <p id="checkAnswerOneOne" class="checking"></p>
         <p id="checkAnswerOneTwo" class="checking"></p>
         <p id="checkAnswerOneThree" class="checking"></p>
@@ -208,7 +239,13 @@
         <p id="checkAnswerThreeThree" class="checking"></p>
         <p id="checkAnswerThreeFour" class="checking"></p>
         <p id="checkAnswerThreeFive" class="checking"></p>
+        <br>
 
+        <p id="checkAnswerFourOne" class="checking"></p>
+        <p id="checkAnswerFourTwo" class="checking"></p>
+        <p id="checkAnswerFourThree" class="checking"></p>
+        <p id="checkAnswerFourFour" class="checking"></p>
+        <br>
         <!-- <p id="checkAnswerFour" class="checking"></p>
         <p id="checkAnswerFive" class="checking"></p>
         <p id="checkAnswerSix" class="checking"></p>
@@ -216,8 +253,10 @@
         <p id="checkAnswerEight" class="checking"></p>
         <p id="checkAnswerNine" class="checking"></p>
         <p id="checkAnswerTen" class="checking"></p>-->
-        <div class="button" onclick="window.location='#showOriginalAnswers';">
-            <input type="button" class="button-class" value="SHOW ANSWERS" onclick="showAnswers()">
+        <!-- <div class="button" onclick="window.location='#showOriginalAnswers';"> -->
+            <div class="button" onclick="showAnswers()">
+            <input type="button" class="button-class" value="SHOW ANSWERS" onclick="window.location='#showOriginalAnswers';">
+            <!-- <span><img src="scrollDown.png" alt="scroll- down"  id="scrollDownId"></span> -->
             <span><i class="fas fa-arrow-circle-down"  id="scrollDownId"></i></span>
             <!-- <button onclick="showAnswers()">Show Answers</button> -->
         </div>
@@ -240,13 +279,11 @@
         <p id="originalAnswerThreeThree" class="answer"></p>
         <p id="originalAnswerThreeFour" class="answer"></p>
         <p id="originalAnswerThreeFive" class="answer"></p>
-        <!-- <h3 id="originalAnswerFour" class="answer"></h3>
-        <h3 id="originalAnswerFive" class="answer"></h3>
-        <h3 id="originalAnswerSix" class="answer"></h3>
-        <h3 id="originalAnswerSeven" class="answer"></h3>
-        <h3 id="originalAnswerEight" class="answer"></h3>
-        <h3 id="originalAnswerNine" class="answer"></h3>
-        <h3 id="originalAnswerTen" class="answer"></h3> -->
+        <br>
+        <p id="originalAnswerFourOne" class="answer"></p>
+        <p id="originalAnswerFourTwo" class="answer"></p>
+        <p id="originalAnswerFourThree" class="answer"></p>
+        <br>
         <div class="footer-div">
         <div class="button">
         <input type="button" class="button-class" value="Change Question" onclick="window.location.href='index.html'">
@@ -259,6 +296,10 @@
     </section>
 </form>
 </section>
+
 <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
