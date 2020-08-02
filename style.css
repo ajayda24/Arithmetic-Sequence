@@ -1,4 +1,4 @@
-/* ----  Body ----*/
+/* ---- HTML & Body ----*/
 html {
     scroll-behavior: smooth;
   }
@@ -17,7 +17,7 @@ body{
     
 }
 
-/* ---- Content-Name ---- */
+/* ---- Element-Name ---- */
 
 h1,h2{
     font-size: 3rem;
@@ -42,15 +42,18 @@ p{
 }
 .sub-questions{
     margin-left: 5%;
-    /* margin-right: 15%; */
 }
-
+.serialNumber{
+    margin-right: 1%;
+}
 /* ---- Sub Questions ---- */
 
 .sub{
     margin-left: 2%;
 }
-
+.questionNumberFour{
+    margin-top: 3%;
+}
 /* ---- Check Answers ---- */
 
 #checkAnswers{
@@ -97,6 +100,7 @@ p{
     width: 300px;
     transition: all 0.5s;
     cursor: pointer;
+    scroll-behavior: smooth;
 }
 input[type=text]:focus {
     background-color: lightblue;
@@ -105,22 +109,7 @@ input[type=text]:focus {
     background-color: lightblue;
 }
 
-/* .medium-change{
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 5%;
-    border-radius: 12px;
-    transition: all 0.5s;
-    cursor: pointer;
-    font-weight: bold;
-}
-.medium-change:hover{
-    background-color: lightblue;
-} */
+
 a:link, a:visited{
     text-decoration: none;
 }
@@ -150,16 +139,21 @@ a:link, a:visited{
     transition: all 0.5s;
     cursor: pointer;
 }  
+
 /* ---- Footer ---- */
 
 .footer-div{
     text-align: center;
 }
+/* Scroll Down Image */
+#scrollDownId{
+    width: 5%;
+  height: auto;
+  margin-left: -3%;
 
-
-/* #displayScore{
-    display: inline-block;
 }
+
+/* Score */
 
 #displayScoreName{
     display: inline-block;
@@ -173,12 +167,18 @@ a:link, a:visited{
 #questionScoreForTwo{
     margin-left: 20%;
 }
-#scrollDownId{
-    width: 5%;
-  height: auto;
-  margin-left: -3%;
-
+#questionScoreForFour{
+    margin-left: 20%;
 }
+
+
+#spanFour{
+    margin: 30%;;
+}
+
+
+
+
 /* ---- Media Query ---- */
 
 @media only screen and (max-width: 800px) {
