@@ -35,6 +35,9 @@ var three_d=(three_value_a+three_value_b)/2;
 
 var three_e=three_d*2;
 
+var four_NSquareValue = Math.floor(Math.random()*20)-10;
+var four_NValue = Math.floor(Math.random()*20)-10;
+var four_NSum = Math.floor(Math.random()*90)+10;
 
 
 
@@ -55,7 +58,17 @@ var three_e=three_d*2;
     document.getElementById("three-five").innerHTML ="(d) "+three_d+" - ͻₒ പദം കാണുക. ";
     document.getElementById("three-six").innerHTML ="(e) ആദ്യ "+three_e+" പദങ്ങളുടെ തുക കാണുക .";    
 
-    
+    // Question 4 
+
+
+
+document.getElementById("four").innerHTML =" S<sub>n</sub> = "+four_NSquareValue+"n<sup>2</sup> + "+four_NValue+"n, ആയാൽ ";
+
+document.getElementById("four-one").innerHTML ="(a) ആദ്യപദവും പൊതുവ്യത്യാസവും കാണുക.";
+
+document.getElementById("four-two").innerHTML ="(b) ഈ ശ്രേണിയുടെ ബീജഗണിതരൂപം എഴുതുക .";
+
+document.getElementById("four-three").innerHTML ="(c) ആദ്യത്തെ "+four_NSum+" പദങ്ങളുടെ തുക കാണുക .";
 
 // for Submit button 
 
@@ -90,6 +103,13 @@ function submitAnswers(){
     var three_e_answer_checking = three_d_answer_checking+three_e_answer_checking;
     var three_e_answer_checking = (three_e_answer_checking)*(three_e/2);
 
+    var four_a_f_answer_checking = four_NSquareValue+four_NValue;
+    var four_a_d_answer_checking = (four_NSquareValue)*2;
+    var four_b_answer_checking = four_a_d_answer_checking;
+    var four_b_d_answer_checking = four_a_f_answer_checking-four_a_d_answer_checking;
+    var four_c_answer_checking = ((four_NSum*four_NSum)*four_NSquareValue)+(four_NSum*four_NValue);
+//--------------------------------------------------------------------------------------------------------
+
     var checkOneOne = document.form.oneSubOneAns.value;
     var checkOneOne = checkOneOne.toLowerCase();
     var checkOneTwo = document.form.oneSubTwoAns.value;
@@ -109,6 +129,12 @@ function submitAnswers(){
     var checkThreeFour = document.form.threeSubFourAns.value;
     var checkThreeFive = document.form.threeSubFiveAns.value;
    
+
+    var checkFourOneF = document.form.fourSubOneAnsF.value;
+    var checkFourOneD = document.form.fourSubOneAnsD.value;
+    var checkFourTwo = document.form.fourSubTwoAns.value;
+    var checkFourTwoD = document.form.fourSubTwoAnsD.value;
+    var checkFourThree = document.form.fourSubThreeAns.value; 
     // alert(checkOneOne);
     // alert(checkOneTwo);
     // alert(checkOneThree);
@@ -292,6 +318,40 @@ function submitAnswers(){
     else{
         var check_three_five_checked = "3.(e) Wrong Answer ";
     }
+    
+//----------------------------
+//Question 4
+
+if(checkFourOneF == "" && checkFourOneD == ""){
+    var check_four_one_checked = "4.(a) Wrong Answer ";
+}
+else if(checkFourOneF == four_a_f_answer_checking || checkFourOneD == four_a_d_answer_checking)  {
+    var check_four_one_checked = "4.(a) Correct Answer ";
+}
+else{
+    var check_four_one_checked = "4.(a) Wrong Answer ";
+}
+
+if(checkFourTwo == "" ){
+    var check_four_two_checked = "4.(b) Wrong Answer ";
+}
+else if(checkFourTwo == four_b_answer_checking && checkFourTwoD == four_b_d_answer_checking){
+    var check_four_two_checked = "4.(b) Correct Answer ";
+}
+else{
+    var check_four_two_checked = "4.(b) Wrong Answer ";
+}
+
+if(checkFourThree == ""){
+    var check_four_three_checked = "4.(c) Wrong Answer ";
+}
+else if(checkFourThree == four_c_answer_checking){
+    var check_four_three_checked = "4.(c) Correct Answer ";
+}
+else{
+    var check_four_three_checked = "4.(c) Wrong Answer ";
+}
+        
 
 
         // document.getElementById("checkAnswers").style.display = "block";
@@ -309,6 +369,10 @@ function submitAnswers(){
          document.getElementById("checkAnswerThreeThree").innerHTML = check_three_three_checked;
          document.getElementById("checkAnswerThreeFour").innerHTML = check_three_four_checked;
          document.getElementById("checkAnswerThreeFive").innerHTML = check_three_five_checked;
+
+         document.getElementById("checkAnswerFourOne").innerHTML = check_four_one_checked;
+         document.getElementById("checkAnswerFourTwo").innerHTML = check_four_two_checked;
+         document.getElementById("checkAnswerFourThree").innerHTML = check_four_three_checked;
 
 
         //  document.getElementById("hiding-textbox-one-one").style.display = "none";
@@ -368,6 +432,16 @@ function submitAnswers(){
             yourScore = yourScore+3;
         }
 
+        if(check_four_one_checked == "4.(a) Correct Answer "){
+            yourScore = yourScore+2;
+        }
+        if(check_four_two_checked == "4.(b) Correct Answer "){
+            yourScore = yourScore+2;
+        }
+        if(check_four_three_checked == "4.(c) Correct Answer "){
+            yourScore = yourScore+1;
+        }
+
 
 
 
@@ -390,6 +464,12 @@ function submitAnswers(){
          document.getElementById("three-sub-four-ans-id").disabled = true;
          document.getElementById("three-sub-five-ans-id").disabled = true;
          document.getElementById("three-sub-six-ans-id").disabled = true;
+
+         document.getElementById("four-sub-one-ans-f-id").disabled = true;
+         document.getElementById("four-sub-one-ans-d-id").disabled = true;
+         document.getElementById("four-sub-two-ans-id").disabled = true;
+         document.getElementById("four-sub-two-ans-d-id").disabled = true;
+         document.getElementById("four-sub-four-ans-id").disabled = true;
     }
 
 
@@ -421,6 +501,13 @@ function showAnswers(){
     var three_e_answer_checking = (three_d_answer_checking+three_a_answer_checking);
     var three_e_answer_checking = three_d_answer_checking+three_e_answer_checking;
     var three_e_answer_checking = (three_e_answer_checking)*(three_e/2);
+
+     // Answer 4
+     var four_a_f_answer_checking = four_NSquareValue+four_NValue;
+     var four_a_d_answer_checking = (four_NSquareValue)*2;
+     var four_b_answer_checking = four_a_d_answer_checking;
+     var four_b_d_answer_checking = four_a_f_answer_checking-four_a_d_answer_checking;
+     var four_c_answer_checking = ((four_NSum*four_NSum)*four_NSquareValue)+(four_NSum*four_NValue);
 // Variable Decleration
     var original_one_one_a_by_d = one_a%d;
     var oo = o-f;
@@ -436,14 +523,20 @@ function showAnswers(){
     var original_one_two = "<button><b>1. (b)</b></button> ("+o+" - "+f+") / "+d+" = "+(o-f)/d+", ഇത് ഒരു പൂർണ്ണസംഖ്യ ആണ്.<br>ആയതിനാൽ "+o+" ഈ ശ്രേണിയിലെ ഒരു പദമാണ്.";
     var original_one_three = "<button><b>1. (c)</b></button> X<sub>n</sub> = "+o+"<br>f = "+f+"<br>d = "+d+"<br>n = ((X<sub>n</sub> - X <sub>1</sub>)/d)+1 <br>= (("+o+"-"+f+")/"+d+")+1<br> = ("+oo+" / "+d+")+1<br> = "+(((oo)/d)+1);
     var original_one_four = "<button><b>1. (d)</b></button> X<sub>n</sub> = f+(n-1)d <br> X<sub>"+n+"</sub> = "+f+"+("+n+"-1)"+d+"<br>= "+f+"+("+n_minuse+")"+d+"<br>= "+f+"+"+n_minuse*d+"<br>= "+n_th_term;
+    
     var original_two_one = "<button><b>2. (a)</b></button> ആദ്യപദം  = "+two_a_value+" + "+two_b_value+"<br>= "+(two_a_value+two_b_value)+"<br> പൊതുവ്യത്യാസം  = n ന്റെ ഗുണകം <br> = "+two_a_value;
     var original_two_two = "<button><b>2. (b)</b></button> X<sub>"+two_c+"</sub> = "+two_a_value+"x"+two_c+" + "+two_b_value+"<br> = "+((two_a_value*two_c)+two_b_value);
     var original_two_three = "<button><b>2. (c)</b></button> തുക  , S<sub>n</sub> = n/2(x<sub>1</sub>+x<sub>n</sub>) <br> S<sub>"+two_c+"</sub> = "+two_c+"/2 ("+(two_a_value+two_b_value)+" + "+((two_a_value*two_c)+two_b_value)+")<br> = "+((two_c/2)*((two_a_value+two_b_value)+((two_a_value*two_c)+two_b_value)));
+    
     var original_three_one = "<button><b>3. (a)</b></button> d = "+three_value_d+" - "+three_value_c+" / "+three_value_b+" - "+three_value_a+ " = "+three_a_original_answer;
     var original_three_two = "<button><b>3. (b)</b></button> f = "+three_value_c+" - "+(three_value_a-1)+"d<br> = "+three_value_c+" - "+(three_value_a-1)*three_a_original_answer+"<br> = "+(three_value_c-((three_value_a-1)*(three_a_original_answer)));
     var original_three_three = "<button><b>3. (c)</b></button> S<sub>n</sub> = n/2 (x<sub>1</sub> + x<sub>n</sub>)<br> = "+(((three_value_b)-(three_value_a))+1)+"/2 ("+three_value_c+" + "+three_value_d+")<br> = "+(((three_value_b)-(three_value_a))+1)+"/2 * "+((three_value_c)+(three_value_d))+"<br> = "+(((three_value_b)-(three_value_a))+1)+" * "+((three_value_c)+(three_value_d))/2+"<br> = "+(((three_value_b)-(three_value_a))+1)*((three_value_c)+(three_value_d))/2;
     var original_three_four = "<button><b>3. (d)</b></button> മധ്യപദം  = തുക / പദങ്ങളുടെ എണ്ണം (പദങ്ങളുടെ എണ്ണം ഒറ്റ സംഖ്യയായൽ )<br> X<sub>"+three_d+"</sub> = "+(((three_value_b)-(three_value_a))+1)*((three_value_c)+(three_value_d))/2+" / "+(((three_value_b)-(three_value_a))+1)+"<br> = "+(((((three_value_b)-(three_value_a))+1)*((three_value_c)+(three_value_d))/2)/(((three_value_b)-(three_value_a))+1));
     var original_three_five = "<button><b>3. (e)</b></button> തുക = n/2 (x<sub>1</sub> + x<sub>n</sub>)<br>പദങ്ങളുടെ എണ്ണം ഇരട്ട സംഖ്യയായൽ ,<br>S<sub>n</sub> = n/2 (മധ്യ പദങ്ങളുടെ തുക )<br>x<sub>"+three_d+"</sub> = "+three_d_answer_checking+"&nbsp;&nbsp;&nbsp;&nbsp;x<sub>"+(three_d+1)+"</sub> = "+((three_d_answer_checking)+(three_a_answer_checking))+"<br> S<sub>"+three_e+"</sub> = "+three_e+"/2 (x<sub>"+three_d+"</sub> + x<sub>"+(three_d+1)+"</sub>)<br> = "+(three_e/2)+"("+three_d_answer_checking+" + "+((three_d_answer_checking)+(three_a_answer_checking))+")<br> = "+(three_e/2)*((three_d_answer_checking)+((three_d_answer_checking)+(three_a_answer_checking)))+"<br><br><b>OR</b><br>X<sub>"+three_e+"</sub> = f+(n-1)d<br> = "+(three_value_c-((three_value_a-1)*(three_a_original_answer)))+" + ("+(three_e-1)+")"+three_a_original_answer+"<br> = "+(three_value_c-((three_value_a-1)*(three_a_original_answer)))+" + "+((three_e-1)*three_a_original_answer)+"<br> = "+((three_value_c-((three_value_a-1)*(three_a_original_answer)))+((three_e-1)*three_a_original_answer))+"<br>S<sub>"+three_e+"</sub> = n/2 (x<sub>1</sub> + x<sub>n</sub>)<br> = "+three_e+"/2 ("+(three_value_c-((three_value_a-1)*(three_a_original_answer)))+" + "+((three_value_c-((three_value_a-1)*(three_a_original_answer)))+((three_e-1)*three_a_original_answer))+")<br> = "+three_e/2+" x "+((three_value_c-((three_value_a-1)*(three_a_original_answer)))+((three_value_c-((three_value_a-1)*(three_a_original_answer)))+((three_e-1)*three_a_original_answer)))+"<br> = "+((three_e/2)*((three_value_c-((three_value_a-1)*(three_a_original_answer)))+((three_value_c-((three_value_a-1)*(three_a_original_answer)))+((three_e-1)*three_a_original_answer))));
+
+    var original_four_one ="<button><b>4. (a)</b></button> f = "+four_NSquareValue+" + "+four_NValue+"<br> = "+four_a_f_answer_checking+"<br> d = 2x n<sup>2</sup> ന്റെ ഗുണകം.<br> = "+four_a_d_answer_checking;
+    var original_four_two = "<button><b>4. (b)</b></button> X<sub>n</sub> = dn + (f-d) <br> = "+four_a_d_answer_checking+"n + ("+four_a_f_answer_checking+" - "+four_a_d_answer_checking+")<br> = "+four_a_d_answer_checking+"n + "+(four_a_f_answer_checking-four_a_d_answer_checking);
+    var original_four_three = "<button><b>4. (c)</b></button> S<sub>n</sub> = "+four_NSquareValue+" x ("+four_NSum+")<sup>2</sup> + "+four_NValue+" x "+four_NSum+"<br> = "+four_NSquareValue*(four_NSum*four_NSum)+" + "+(four_NValue*four_NSum)+"<br> = "+(four_NSquareValue*(four_NSum*four_NSum)+(four_NValue*four_NSum));
 
     // Output
     document.getElementById("originalAnswerOneOne").innerHTML = original_one_one;
@@ -460,4 +553,8 @@ function showAnswers(){
     document.getElementById("originalAnswerThreeThree").innerHTML = original_three_three;
     document.getElementById("originalAnswerThreeFour").innerHTML = original_three_four;
     document.getElementById("originalAnswerThreeFive").innerHTML = original_three_five;
+
+    document.getElementById("originalAnswerFourOne").innerHTML = original_four_one;
+    document.getElementById("originalAnswerFourTwo").innerHTML = original_four_two;
+    document.getElementById("originalAnswerFourThree").innerHTML = original_four_three;
 }
